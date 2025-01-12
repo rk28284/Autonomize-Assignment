@@ -1,0 +1,134 @@
+/* Profile Section */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  .profile-details {
+    flex: 1;
+  }
+  
+  .profile-username {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .profile-bio {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .profile-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #495057;
+  }
+  
+  /* Repository List Section */
+  .repository-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .repository-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .repository-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .repository-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .repository-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  
+  .repository-link {
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .repository-details {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .repository-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+  
+  .repository-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0 0;
+  }
+  

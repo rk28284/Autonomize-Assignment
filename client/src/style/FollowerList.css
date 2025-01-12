@@ -1,0 +1,137 @@
+/* Container for Followers Page */
+.followers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  /* Back Button Styling */
+  .followers-back-btn {
+    padding: 12px 25px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .followers-back-btn:hover {
+    background-color: #388e3c;
+  }
+  
+  /* Main Content Container */
+  .followers-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    gap: 30px;
+  }
+  
+  /* User Profile Card */
+  .profile-card {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .profile-info p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Followers List Section */
+  .followers-list-container {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .followers-list-container h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .followers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .followers-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .followers-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .followers-list::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+  }
+  
+  /* Follower Card */
+  .follower-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follower-card:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .follower-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+  }
+  
+  .follower-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  

@@ -1,0 +1,83 @@
+/* Container for the repositories page */
+.follower-repositories-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Back Button */
+  .back-to-followers-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-to-followers-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Title */
+  .repositories-title {
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .follower-name {
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  /* Repositories List */
+  .repositories-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  /* Repository Card */
+  .repository-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    width: calc(100% / 3 - 40px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+  }
+  
+  .repository-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Repository Name */
+  .repository-name {
+    font-size: 1.2em;
+    color: #333333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Repository Description */
+  .repository-description {
+    font-size: 0.9em;
+    color: #666666;
+    line-height: 1.4;
+    margin: 0;
+  }
+  

@@ -1,0 +1,99 @@
+/* Container */
+.user-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.user-search-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.github-logo {
+  width: 100px;
+  height: auto;
+}
+
+.user-search-title {
+  font-size: 2.2em;
+  color: #333;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* Form */
+.user-search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  gap: 15px;
+}
+
+/* Input */
+.user-search-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.user-search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Button */
+.user-search-button {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.user-search-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.user-search-button:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.user-search-button.loading {
+  background-color: #6c757d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-search-title {
+    font-size: 1.8em;
+  }
+
+  .user-search-input {
+    font-size: 0.9em;
+  }
+
+  .user-search-button {
+    font-size: 0.9em;
+  }
+}

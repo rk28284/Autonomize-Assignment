@@ -1,0 +1,83 @@
+/* Container Styles */
+.repo-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Repository Card */
+  .repo-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+  }
+  
+  .repo-name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .repo-details {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .repo-description {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .repo-details p {
+    margin-bottom: 12px;
+  }
+  
+  /* Button Styles */
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .repo-link {
+    background-color: #28a745;
+  }
+  
+  .repo-link:hover {
+    background-color: #1e7e34;
+  }
+  
+  .back-button {
+    margin-top: 30px;
+  }
+  
+  /* Loading Message */
+  .loading-message {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+  }
+  
