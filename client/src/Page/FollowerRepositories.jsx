@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "../style/followerRepositories.css";
-
+import "../style/FollowerRepositories.css";
 const FollowerRepositories = () => {
   const { followerLogin } = useParams();
   const [repositories, setRepositories] = useState([]);
