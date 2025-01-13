@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../style/RepoList1.css";
+import "../style/RepoList.css";
 
 const RepoList = ({ user, repos }) => {
   const navigate = useNavigate();

@@ -1,134 +1,99 @@
-/* Profile Section */
 .profile-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .profile-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 2px solid #ddd;
-  }
-  
-  .profile-details {
-    flex: 1;
-  }
-  
-  .profile-username {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-  }
-  
-  .profile-bio {
-    font-size: 1rem;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .profile-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .btn {
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  .btn-secondary {
-    background-color: #6c757d;
-    color: white;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #495057;
-  }
-  
-  /* Repository List Section */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-details h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.profile-details p {
+  font-size: 1em;
+  color: #666;
+}
+
+.profile-buttons .btn {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.profile-buttons .btn:hover {
+  background-color: #0056b3;
+}
+
+.repository-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Exactly two columns */
+  gap: 20px; /* Add space between items */
+  margin-top: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.repository-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.repository-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.repository-avatar {
+  flex-shrink: 0;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.repository-link {
+  text-decoration: none;
+  color: inherit;
+  flex-grow: 1;
+}
+
+.repository-details {
+  text-align: left;
+}
+
+.repository-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.repository-description {
+  font-size: 0.10em;
+  color: #666;
+}
+@media (max-width: 768px) {
   .repository-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    grid-template-columns: 1fr; 
   }
-  
-  .repository-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  .repository-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  .repository-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .repository-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  
-  .repository-link {
-    text-decoration: none;
-    color: inherit;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
-  .repository-details {
-    background-color: #f8f9fa;
-    padding: 10px;
-    border-radius: 8px;
-    width: 100%;
-  }
-  
-  .repository-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-    margin: 0;
-  }
-  
-  .repository-description {
-    font-size: 1rem;
-    color: #555;
-    margin: 5px 0 0;
-  }
+}
   
