@@ -29,7 +29,7 @@ function App() {
               <Route path="/repo/:owner/:repoName" element={<RepoDetails />} />
               <Route
                 path="/followers/:name"
-                element={<FollowerList followersUrl={userData.followers_url} />}
+                element={<FollowerList followersUrl={currentUser.followers_url} />}
               />
              <Route
               path="/follower-repository/:followerLogin"
