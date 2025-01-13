@@ -110,7 +110,9 @@
 
   <h2>Frontend Screenshot</h2>
   <p>Below is a screenshot of the application's user interface:</p>
+  
  ![Screenshot 2025-01-13 073220](https://github.com/user-attachments/assets/ed581c7b-1c01-4d16-ba1e-2cfaccf99f8b)
+ 
 ![Screenshot 2025-01-13 073644](https://github.com/user-attachments/assets/04cad647-f148-4e31-aecd-7ac934153333)
 
 ![Screenshot 2025-01-13 073734](https://github.com/user-attachments/assets/fe8876c0-7202-4092-824b-141d796ec2d7)
