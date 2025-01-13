@@ -8,23 +8,23 @@ import UserSearch from "./components/UserSearch";
 import FollowerRepositories from "./Page/FollowerRepositories";
 
 function App() {
-  const [userData, setUserData] = useState(null);
-  const [repos, setRepos] = useState([]);
+  const [currentUser , setCurrentUser ] = useState(null);
+  const [repositoryList, setRepositoryList] = useState([]);
   const location = useLocation();
 
   return (
     <>
       <div className="app">
         {location.pathname === "/" && (
-          <UserSearch setUserData={setUserData} setRepos={setRepos} />
+          <UserSearch setUserData={setCurrentUser} setRepos={setRepositoryList} />
         )}
 
         <Routes>
-          {userData && (
+          {currentUser && (
             <>
               <Route
                 path="/repo"
-                element={<RepoList user={userData} repos={repos} />}
+                element={<RepoList user={currentUser} repos={repositoryList} />}
               />
               <Route path="/repo/:owner/:repoName" element={<RepoDetails />} />
               <Route
